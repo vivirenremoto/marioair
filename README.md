@@ -1,6 +1,6 @@
 # classic Mario bros game controlled with hand gestures made with javascript 
 
-## demo
+## play
 - [https://vivirenremoto.github.io/marioair/](https://vivirenremoto.github.io/marioair/)
 - [https://marioair.netlify.app/](https://marioair.netlify.app/)
 
