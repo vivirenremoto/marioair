@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Mario Bros Air</title>
+    <meta name="description" content="Gesture controlled Mario Bros game" />
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <!-- build:css index.min.css -->
+    <link href="Full%20Screen%20Mario_files/index.css?v=2" rel="stylesheet">
+    <!-- /build -->
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <meta property="og:image" content="https://vivirenremoto.com/mario/social.png">
+    <meta property="og:image:secure_url" content="https://vivirenremoto.com/mario/social.png">
+    <meta property="og:image:alt" content="Mario Bros Air">
+    <meta property="og:image:type" content="image/png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mario Bros Air">
+    <meta name="twitter:image" content="https://vivirenremoto.com/mario/social.png">
+
+</head>
+
+
+<body>
+
+
+    <section id="game">
+        <!-- FSM.UserWrapper will fill out this section... -->
+    </section>
+
+    <section id="controls">
+        <!-- FSM.UserWrapper will fill out this section... -->
+    </section>
+
+
+
+
+
+
+
+    <!-- build:js FullScreenMario.min.js -->
+    <script>var player;</script>
+
+    <script src="Full%20Screen%20Mario_files/EightBittr.js"></script>
+    <script src="Full%20Screen%20Mario_files/GameStartr.js"></script>
+    <script src="Full%20Screen%20Mario_files/AudioPlayr.js"></script>
+    <script src="Full%20Screen%20Mario_files/ChangeLinr.js"></script>
+    <script src="Full%20Screen%20Mario_files/FPSAnalyzr.js"></script>
+    <script src="Full%20Screen%20Mario_files/GamesRunnr.js"></script>
+    <script src="Full%20Screen%20Mario_files/GroupHoldr.js"></script>
+    <script src="Full%20Screen%20Mario_files/InputWritr.js"></script>
+    <script src="Full%20Screen%20Mario_files/LevelEditr.js"></script>
+    <script src="Full%20Screen%20Mario_files/beautify.js"></script>
+    <script src="Full%20Screen%20Mario_files/NumberMakr.js"></script>
+    <script src="Full%20Screen%20Mario_files/MapsCreatr.js"></script>
+    <script src="Full%20Screen%20Mario_files/MapScreenr.js"></script>
+    <script src="Full%20Screen%20Mario_files/MapsHandlr.js"></script>
+    <script src="Full%20Screen%20Mario_files/ModAttachr.js"></script>
+    <script src="Full%20Screen%20Mario_files/PixelDrawr.js"></script>
+    <script src="Full%20Screen%20Mario_files/PixelRendr.js"></script>
+    <script src="Full%20Screen%20Mario_files/ObjectMakr.js"></script>
+    <script src="Full%20Screen%20Mario_files/StatsHoldr.js"></script>
+    <script src="Full%20Screen%20Mario_files/StringFilr.js"></script>
+    <script src="Full%20Screen%20Mario_files/ThingHittr.js"></script>
+    <script src="Full%20Screen%20Mario_files/TimeHandlr.js"></script>
+    <script src="Full%20Screen%20Mario_files/QuadsKeepr.js"></script>
+    <script src="Full%20Screen%20Mario_files/UserWrappr.js"></script>
+    <script src="Full%20Screen%20Mario_files/WorldSeedr.js"></script>
+    <script src="Full%20Screen%20Mario_files/FullScreenMario.js?v=2"></script>
+    <script src="Full%20Screen%20Mario_files/audio.js"></script>
+    <script src="Full%20Screen%20Mario_files/collisions.js"></script>
+    <script src="Full%20Screen%20Mario_files/editor.js"></script>
+    <script src="Full%20Screen%20Mario_files/generator.js"></script>
+    <script src="Full%20Screen%20Mario_files/groups.js"></script>
+    <script src="Full%20Screen%20Mario_files/events.js"></script>
+    <script src="Full%20Screen%20Mario_files/input.js"></script>
+    <script src="Full%20Screen%20Mario_files/maps.js?v=2"></script>
+    <script src="Full%20Screen%20Mario_files/mods.js"></script>
+    <script src="Full%20Screen%20Mario_files/objects.js"></script>
+    <script src="Full%20Screen%20Mario_files/quadrants.js"></script>
+    <script src="Full%20Screen%20Mario_files/renderer.js"></script>
+    <script src="Full%20Screen%20Mario_files/runner.js"></script>
+    <script src="Full%20Screen%20Mario_files/sprites.js"></script>
+    <script src="Full%20Screen%20Mario_files/statistics.js?v=2"></script>
+    <script src="Full%20Screen%20Mario_files/ui.js?v=3"></script>
+    <!-- /build -->
+
+
+
+    <!-- handtracking -->
+
+    <link href="aircontrols.css?v=4" rel="stylesheet">
+
+    <div id="intro">
+        <button onclick="toggleVideo()" id="trackbutton" type="button">Loading handtrack.js</button>
+        <div id="gif"></div>
+    </div>
+
+    <div id="ui" style="display:none">
+        <div id="cursor"></div>
+        <div id="updatenote" style="display:none"> loading model ..</div>
+        <video class="canvasbox" autoplay="autoplay" id="myvideo" style="display:none"></video>
+        <canvas id="canvas_webcam" class="canvasbox"></canvas>
+        <div id="keys_pressed"></div>
+    </div>
+
+    <a href="https://gist.github.com/vivirenremoto/440fe5e41ee726058d9c13c4a02e7341" target="_blank"
+        id="credits">Credits</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
+    <script src="aircontrols.js?v=15"> </script>
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114321266-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114321266-1');
+    </script>
+
+
+
+</body>
+
+</html>
