@@ -1,4 +1,4 @@
-# classic Mario bros game controlled with hand gestures made with javascript 
+# classic mario bros game controlled with hand gestures made with javascript 
 
 ## play
 - [https://vivirenremoto.github.io/marioair/](https://vivirenremoto.github.io/marioair/)
